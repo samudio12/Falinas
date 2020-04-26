@@ -19,9 +19,7 @@ $('#main-menu > button').click(() => {
   }
 });
 
-tns({
-  container: '.my-slider',
-  // items: 6,
+let carouselBaseConfig = {
   slideBy: 'page',
   autoplay: false,
   gutter: 48,
@@ -40,4 +38,8 @@ tns({
       items: 6,
     },
   },
-});
+};
+
+tns({ ...carouselBaseConfig, container: '.hot-carousel' });
+tns({ ...carouselBaseConfig, container: '.recommendations-carousel' });
+tns({ ...carouselBaseConfig, container: '.top-carousel' });
