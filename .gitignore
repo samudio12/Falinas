@@ -8,3 +8,4 @@ package-lock.json
 .Trashes
 .bin
 Thumbs.db
+*.log
