@@ -1,673 +1,1135 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-
-  <title>Carousel Template for Bootstrap</title>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+<meta name="description" content=""/>
+<meta name="author" content=""/>
+<title>Carousel Template for Bootstrap</title>
 </head>
-
 <body>
-  <!-- Head Section -->
-  
-  <div class="main-head container-fluid p-5">
-
-    <div class="navbar-wrap row flex-row-reverse">
-      <div class="col-md-auto col-sm-3 col-6">
-        <nav class="shadow-sm navbar navbar-expand-lg navbar-light rounded bg-white" id="main-menu">
-          <button class="navbar-toggler ml-auto hidden-sm-up float-xs-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Hot Right Now <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Our Recommendations</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Brands</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Help</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-      </div>
-      
-
-    <div class="row m-0 pb-5 pt-5">
-      <div class="shadow-sm col-md-5 p-4 rounded bg-white" id="search-menu">
-        <img src="/public/images/right.png" class="img-fluid pb-3" alt="Right Price">
-        <h3 class="text-muted">Search and compare all your favorite products</h3>
-        <div class="container pt-2">
-          <form action="/results" autocomplete="off" class="form-inline row">
-            <input aria-label="How can we help you with?" class="text-search form-control col" id="StartPageSearchBar" name="q" placeholder="How can we help you with?" type="text" value="">
-            <button type="submit" class="submit-search btn btn-danger ml-1 col-md-1">
-              <i class="fas fa-search"></i>
-
-            </button>
-         
-
-          </form>
-        </div>
-        
-
-        
-
-      </div>
-
-    </div>
-
-  </div>
-
-  
-
-
-
-
-
-  <!-- Products Section -->
+<!-- Head Section -->
+<div class="main-head container-fluid p-5">
+	<div class="navbar-wrap row flex-row-reverse">
+		<div class="col-md-auto col-sm-3 col-6">
+			<nav class="shadow-sm navbar navbar-expand-lg navbar-light rounded bg-white" id="main-menu">
+			<button class="navbar-toggler ml-auto hidden-sm-up float-xs-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+					<a class="nav-link" href="#">Hot Right Now <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" href="#">Our Recommendations</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" href="#">Brands</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" href="#">Help</a>
+					</li>
+				</ul>
+			</div>
+			</nav>
+		</div>
+	</div>
+	<div class="row m-0 pb-5 pt-5">
+		<div class="shadow-sm col-md-5 p-4 rounded bg-white" id="search-menu">
+			<img src="/public/images/right.png" class="img-fluid pb-3" alt="Right Price">
+			<h3 class="text-muted">Search and compare all your favorite products</h3>
+			<div class="container pt-2">
+				<form action="/results" autocomplete="off" class="form-inline row">
+					<input aria-label="How can we help you with?" class="text-search form-control col" id="StartPageSearchBar" name="q" placeholder="How can we help you with?" type="text" value="">
+					<button type="submit" class="submit-search btn btn-danger ml-1 col-md-1">
+					<i class="fas fa-search"></i>
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Products Section -->
 <main role="main container">
-
-  <div class="nav-categories p-3">
-    <ul class="nav nav-pills nav-fill justify-content align-items-center">
-      <li class="nav-item">
-        <a href="#" title=""><img src="/public/images/perfumes.png" class="img-fluid pb-1" alt="Perfumes"></a>
-        <a class="nav-link text-muted" href="#">Perfumes</a>
-      </li>
-      <ul class="list-unstyled">
-        <li class="divider-vertical"></li>
-      </ul>
-      <li class="nav-item">
-        <a href="#" title=""><img src="/public/images/skincare.png" class="img-fluid pb-1" alt="Skincare"></a>
-        <a class="nav-link text-muted" href="#">Skincare</a>
-      </li>
-      <ul class="list-unstyled">
-        <li class="divider-vertical"></li>
-      </ul>
-      <li class="nav-item">
-        <a href="#" title=""><img src="/public/images/sunglasses.png" class="img-fluid p-2" alt="Sunglasses"></a>
-        <a class="nav-link text-muted" href="#">Sunglasses</a>
-      </li>
-      <ul class="list-unstyled">
-        <li class="divider-vertical"></li>
-      </ul>
-      <li class="nav-item">
-        <a href="#" title="">  <img src="/public/images/phone.png" class="img-fluid pb-1" alt="Phones"></a>
-        <a class="nav-link text-muted" href="#">Phones</a>
-      </li>
-      <ul class="list-unstyled">
-        <li class="divider-vertical"></li>
-      </ul>
-      <li class="nav-item">
-        <a href="#" title=""><img src="/public/images/computer.png" class="img-fluid pb-1" alt="Computer"></a>
-        <a class="nav-link text-muted" href="#">Computer</a>
-      </li>
-      <ul class="list-unstyled">
-        <li class="divider-vertical"></li>
-      </ul>
-      <li class="nav-item">
-        <a href="#" title=""><img src="/public/images/shoe.png" class="img-fluid p-2" alt="Shoe"></a>
-        <a class="nav-link text-muted" href="#">Shoe</a>
-      </li>
-      <ul class="list-unstyled">
-        <li class="divider-vertical"></li>
-      </ul>
-      <li class="nav-item">
-        <a href="#" title=""><img src="/public/images/clothes.png" class="img-fluid pb-1" alt="Clothing"></a>
-        <a class="nav-link text-muted" href="#">Clothing</a>
-      </li>
-      <ul class="list-unstyled">
-        <li class="divider-vertical"></li>
-      </ul>
-      <li class="nav-item dropdown">
-        <a href="#" title=""><img src="/public/images/points.png" class="img-fluid pt-4 mt-2" alt="More">
-        <a class="nav-link text-muted pt-2" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">More</i></a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Separated link</a>
+<div class="nav-categories p-3">
+	<ul class="nav nav-pills nav-fill justify-content align-items-center">
+		<li class="nav-item">
+		<a href="#" title=""><img src="/public/images/perfumes.png" class="img-fluid pb-1" alt="Perfumes"></a>
+		<a class="nav-link text-muted" href="#">Perfumes</a>
+		</li>
+		<ul class="list-unstyled">
+			<li class="divider-vertical"></li>
+		</ul>
+		<li class="nav-item">
+		<a href="#" title=""><img src="/public/images/skincare.png" class="img-fluid pb-1" alt="Skincare"></a>
+		<a class="nav-link text-muted" href="#">Skincare</a>
+		</li>
+		<ul class="list-unstyled">
+			<li class="divider-vertical"></li>
+		</ul>
+		<li class="nav-item">
+		<a href="#" title=""><img src="/public/images/sunglasses.png" class="img-fluid p-2" alt="Sunglasses"></a>
+		<a class="nav-link text-muted" href="#">Sunglasses</a>
+		</li>
+		<ul class="list-unstyled">
+			<li class="divider-vertical"></li>
+		</ul>
+		<li class="nav-item">
+		<a href="#" title=""><img src="/public/images/phone.png" class="img-fluid pb-1" alt="Phones"></a>
+		<a class="nav-link text-muted" href="#">Phones</a>
+		</li>
+		<ul class="list-unstyled">
+			<li class="divider-vertical"></li>
+		</ul>
+		<li class="nav-item">
+		<a href="#" title=""><img src="/public/images/computer.png" class="img-fluid pb-1" alt="Computer"></a>
+		<a class="nav-link text-muted" href="#">Computer</a>
+		</li>
+		<ul class="list-unstyled">
+			<li class="divider-vertical"></li>
+		</ul>
+		<li class="nav-item">
+		<a href="#" title=""><img src="/public/images/shoe.png" class="img-fluid p-2" alt="Shoe"></a>
+		<a class="nav-link text-muted" href="#">Shoe</a>
+		</li>
+		<ul class="list-unstyled">
+			<li class="divider-vertical"></li>
+		</ul>
+		<li class="nav-item">
+		<a href="#" title=""><img src="/public/images/clothes.png" class="img-fluid pb-1" alt="Clothing"></a>
+		<a class="nav-link text-muted" href="#">Clothing</a>
+		</li>
+		<ul class="list-unstyled">
+			<li class="divider-vertical"></li>
+		</ul>
+		<li class="nav-item dropdown">
+		<a href="#" title=""><img src="/public/images/points.png" class="img-fluid pt-4 mt-2" alt="More">
+		<a class="nav-link text-muted pt-2" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">More</i></a>
+		<div class="dropdown-menu">
+			<a class="dropdown-item" href="#">Action</a>
+			<a class="dropdown-item" href="#">Another action</a>
+			<a class="dropdown-item" href="#">Something else here</a>
+			<div class="dropdown-divider">
+			</div>
+			<a class="dropdown-item" href="#">Separated link</a>
+		</div>
+	</ul>
+</div>
+<div class="m-5">
+	<div class="row">
+		<div class="col-6 col-md-3 p-4">
+			<img src="/public/images/adidas.jpeg" class="img-fluid pb-2" alt="Adidas">
+			<h2 class="h5 font-weight-normal">Adidas</h2>
+			<p class="small font-weight-light text-muted">
+				Stan Smith Collection
+			</p>
+			<div class="d-flex justify-content">
+				<p class="h6 small pt-1">
+					now
+				</p>
+				<p class="h5 pl-2">
+					€45
+				</p>
+				<p class="h5 text-black-50 font-weight-lighter pl-2">
+					<del>€99</del>
+				</p>
+			</div>
+			<div class="d-flex justify-content align-items-center py-2">
+				<img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban">
+				<p class="h6 pl-2 mb-0">
+					133
+				</p>
+				<p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">
+					Already bought
+				</p>
+			</div>
+		</div>
+		<div class="col-6 col-md-3 p-4">
+			<img src="/public/images/coco.jpeg" class="img-fluid pb-2" alt="Chanel">
+			<h2 class="h5 font-weight-normal">Chanel</h2>
+			<p class="small font-weight-light text-muted">
+				Coco Mademoiselle
+			</p>
+			<div class="d-flex justify-content">
+				<p class="h6 small pt-1">
+					now
+				</p>
+				<p class="h5 pl-2">
+					€63
+				</p>
+				<p class="h5 text-black-50 font-weight-lighter pl-2">
+					<del>€129</del>
+				</p>
+			</div>
+			<div class="d-flex justify-content align-items-center py-2">
+				<img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban">
+				<p class="h6 pl-2 mb-0">
+					133
+				</p>
+				<p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">
+					Already bought
+				</p>
+			</div>
+		</div>
+		<div class="col-6 col-md-3 p-4">
+			<img src="/public/images/Rayban.jpeg" class="img-fluid pb-2" alt="Ray-Ban">
+			<h2 class="h5 font-weight-normal">Ray-Ban</h2>
+			<p class="small font-weight-light text-muted">
+				Ray-Ban Collections
+			</p>
+			<div class="d-flex justify-content">
+				<p class="h6 small pt-1">
+					now
+				</p>
+				<p class="h5 pl-2">
+					€79
+				</p>
+				<p class="h5 text-black-50 font-weight-lighter pl-2">
+					<del>€159</del>
+				</p>
+			</div>
+			<div class="d-flex justify-content align-items-center py-2">
+				<img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban">
+				<p class="h6 pl-2 mb-0">
+					133
+				</p>
+				<p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">
+					Already bought
+				</p>
+			</div>
+		</div>
+		<div class="col-6 col-md-3 p-4">
+			<img src="/public/images/iphone11.jpeg" class="img-fluid pb-2" alt="Iphone 11">
+			<h2 class="h5 font-weight-normal">Iphone 11</h2>
+			<p class="small font-weight-light text-muted">
+				Iphone 11 Collection
+			</p>
+			<div class="d-flex justify-content">
+				<p class="h6 small pt-1">
+					now
+				</p>
+				<p class="h5 pl-2">
+					€779
+				</p>
+				<p class="h5 text-black-50 font-weight-lighter pl-2">
+					<del>€1199</del>
+				</p>
+			</div>
+			<div class="d-flex justify-content align-items-center py-2">
+				<img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban">
+				<p class="h6 pl-2 mb-0">
+					133
+				</p>
+				<p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">
+					Already bought
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<hr class="my-3 mazda mx-5">
+<div class="m-5">
+	<div class="d-flex justify-content-between align-items-center">
+		<div>
+			<p class="h5 pb-3">
+				Hot Right Now
+			</p>
+		</div>
+		<div>
+			<a class="nav-link h6 text-muted font-weight-light small" href="#">See All</a>
+		</div>
+	</div>
+	<div class="row my-slider">  
+        <div class="card border-0">
+            <img src="/public/images/adidas.jpeg" class="card-img-top rounded-0" alt="Adidas">
+            <div class="card-body px-0 py-2">
+                <h5 class="card-title">Adidas</h5>
+                <p class="card-subtitle font-weight-light text-muted">
+                    Stan Smith Collection
+                </p>
+                <div class="d-flex justify-content mt-2">
+                    <p class="h6 small pt-1">
+                        now
+                    </p>
+                    <p class="h5 pl-2">
+                        €45
+                    </p>
+                    <p class="h5 text-black-50 font-weight-lighter pl-2">
+                        <del>€99</del>
+                    </p>
+                </div>
+                <div class="d-flex justify-content align-items-center py-2">
+                    <img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban">
+                    <p class="h6 pl-2 mb-0">
+                        133
+                    </p>
+                    <p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">
+                        Already bought
+                    </p>
+                </div>
+            </div>
         </div>
-    </ul>
-  </div>
-    
-
-  <div class="m-5">
-    <div class="row">
-      <div class="col-6 col-md-3 p-4">
-        <img src="/public/images/adidas.jpeg" class="img-fluid pb-2" alt="Adidas">
-        <h2 class="h5 font-weight-normal">Adidas</h2>
-        <p class="small font-weight-light text-muted">Stan Smith Collection</p>
-        <div class="d-flex justify-content">
-          <p class="h6 small pt-1">now</p><p class="h5 pl-2">€45</p><p class="h5 text-black-50 font-weight-lighter pl-2"><del>€99</del></p>
+        <div class="card border-0">
+            <img src="/public/images/adidas.jpeg" class="card-img-top rounded-0" alt="Adidas">
+            <div class="card-body px-0 py-2">
+                <h5 class="card-title">Adidas</h5>
+                <p class="card-subtitle font-weight-light text-muted">
+                    Stan Smith Collection
+                </p>
+                <div class="d-flex justify-content mt-2">
+                    <p class="h6 small pt-1">
+                        now
+                    </p>
+                    <p class="h5 pl-2">
+                        €45
+                    </p>
+                    <p class="h5 text-black-50 font-weight-lighter pl-2">
+                        <del>€99</del>
+                    </p>
+                </div>
+                <div class="d-flex justify-content align-items-center py-2">
+                    <img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban">
+                    <p class="h6 pl-2 mb-0">
+                        133
+                    </p>
+                    <p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">
+                        Already bought
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="d-flex justify-content align-items-center py-2">
-          <img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban"><p class="h6 pl-2 mb-0">133</p><p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">Already bought</p>
+        <div class="card border-0">
+            <img src="/public/images/adidas.jpeg" class="card-img-top rounded-0" alt="Adidas">
+            <div class="card-body px-0 py-2">
+                <h5 class="card-title">Adidas</h5>
+                <p class="card-subtitle font-weight-light text-muted">
+                    Stan Smith Collection
+                </p>
+                <div class="d-flex justify-content mt-2">
+                    <p class="h6 small pt-1">
+                        now
+                    </p>
+                    <p class="h5 pl-2">
+                        €45
+                    </p>
+                    <p class="h5 text-black-50 font-weight-lighter pl-2">
+                        <del>€99</del>
+                    </p>
+                </div>
+                <div class="d-flex justify-content align-items-center py-2">
+                    <img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban">
+                    <p class="h6 pl-2 mb-0">
+                        133
+                    </p>
+                    <p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">
+                        Already bought
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-6 col-md-3 p-4">
-        <img src="/public/images/coco.jpeg" class="img-fluid pb-2" alt="Chanel">
-        <h2 class="h5 font-weight-normal">Chanel</h2>
-        <p class="small font-weight-light text-muted">Coco Mademoiselle</p>
-        <div class="d-flex justify-content">
-          <p class="h6 small pt-1">now</p><p class="h5 pl-2">€63</p><p class="h5 text-black-50 font-weight-lighter pl-2"><del>€129</del></p>
+        <div class="card border-0">
+            <img src="/public/images/adidas.jpeg" class="card-img-top rounded-0" alt="Adidas">
+            <div class="card-body px-0 py-2">
+                <h5 class="card-title">Adidas</h5>
+                <p class="card-subtitle font-weight-light text-muted">
+                    Stan Smith Collection
+                </p>
+                <div class="d-flex justify-content mt-2">
+                    <p class="h6 small pt-1">
+                        now
+                    </p>
+                    <p class="h5 pl-2">
+                        €45
+                    </p>
+                    <p class="h5 text-black-50 font-weight-lighter pl-2">
+                        <del>€99</del>
+                    </p>
+                </div>
+                <div class="d-flex justify-content align-items-center py-2">
+                    <img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban">
+                    <p class="h6 pl-2 mb-0">
+                        133
+                    </p>
+                    <p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">
+                        Already bought
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="d-flex justify-content align-items-center py-2">
-          <img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban"><p class="h6 pl-2 mb-0">133</p><p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">Already bought</p>
+        <div class="card border-0">
+            <img src="/public/images/adidas.jpeg" class="card-img-top rounded-0" alt="Adidas">
+            <div class="card-body px-0 py-2">
+                <h5 class="card-title">Adidas</h5>
+                <p class="card-subtitle font-weight-light text-muted">
+                    Stan Smith Collection
+                </p>
+                <div class="d-flex justify-content mt-2">
+                    <p class="h6 small pt-1">
+                        now
+                    </p>
+                    <p class="h5 pl-2">
+                        €45
+                    </p>
+                    <p class="h5 text-black-50 font-weight-lighter pl-2">
+                        <del>€99</del>
+                    </p>
+                </div>
+                <div class="d-flex justify-content align-items-center py-2">
+                    <img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban">
+                    <p class="h6 pl-2 mb-0">
+                        133
+                    </p>
+                    <p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">
+                        Already bought
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-6 col-md-3 p-4">
-        <img src="/public/images/Rayban.jpeg" class="img-fluid pb-2" alt="Ray-Ban">
-        <h2 class="h5 font-weight-normal">Ray-Ban</h2>
-        <p class="small font-weight-light text-muted">Ray-Ban Collections</p>
-        <div class="d-flex justify-content">
-          <p class="h6 small pt-1">now</p><p class="h5 pl-2">€79</p><p class="h5 text-black-50 font-weight-lighter pl-2"><del>€159</del></p>
+        <div class="card border-0">
+            <img src="/public/images/adidas.jpeg" class="card-img-top rounded-0" alt="Adidas">
+            <div class="card-body px-0 py-2">
+                <h5 class="card-title">Adidas</h5>
+                <p class="card-subtitle font-weight-light text-muted">
+                    Stan Smith Collection
+                </p>
+                <div class="d-flex justify-content mt-2">
+                    <p class="h6 small pt-1">
+                        now
+                    </p>
+                    <p class="h5 pl-2">
+                        €45
+                    </p>
+                    <p class="h5 text-black-50 font-weight-lighter pl-2">
+                        <del>€99</del>
+                    </p>
+                </div>
+                <div class="d-flex justify-content align-items-center py-2">
+                    <img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban">
+                    <p class="h6 pl-2 mb-0">
+                        133
+                    </p>
+                    <p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">
+                        Already bought
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="d-flex justify-content align-items-center py-2">
-          <img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban"><p class="h6 pl-2 mb-0">133</p><p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">Already bought</p>
+        <div class="card border-0">
+            <img src="/public/images/adidas.jpeg" class="card-img-top rounded-0" alt="Adidas">
+            <div class="card-body px-0 py-2">
+                <h5 class="card-title">Adidas</h5>
+                <p class="card-subtitle font-weight-light text-muted">
+                    Stan Smith Collection
+                </p>
+                <div class="d-flex justify-content mt-2">
+                    <p class="h6 small pt-1">
+                        now
+                    </p>
+                    <p class="h5 pl-2">
+                        €45
+                    </p>
+                    <p class="h5 text-black-50 font-weight-lighter pl-2">
+                        <del>€99</del>
+                    </p>
+                </div>
+                <div class="d-flex justify-content align-items-center py-2">
+                    <img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban">
+                    <p class="h6 pl-2 mb-0">
+                        133
+                    </p>
+                    <p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">
+                        Already bought
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-6 col-md-3 p-4">
-        <img src="/public/images/iphone11.jpeg" class="img-fluid pb-2" alt="Iphone 11">
-        <h2 class="h5 font-weight-normal">Iphone 11</h2>
-        <p class="small font-weight-light text-muted">Iphone 11 Collection</p>
-        <div class="d-flex justify-content">
-          <p class="h6 small pt-1">now</p><p class="h5 pl-2">€779</p><p class="h5 text-black-50 font-weight-lighter pl-2"><del>€1199</del></p>
+        <div class="card border-0">
+            <img src="/public/images/adidas.jpeg" class="card-img-top rounded-0" alt="Adidas">
+            <div class="card-body px-0 py-2">
+                <h5 class="card-title">Adidas</h5>
+                <p class="card-subtitle font-weight-light text-muted">
+                    Stan Smith Collection
+                </p>
+                <div class="d-flex justify-content mt-2">
+                    <p class="h6 small pt-1">
+                        now
+                    </p>
+                    <p class="h5 pl-2">
+                        €45
+                    </p>
+                    <p class="h5 text-black-50 font-weight-lighter pl-2">
+                        <del>€99</del>
+                    </p>
+                </div>
+                <div class="d-flex justify-content align-items-center py-2">
+                    <img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban">
+                    <p class="h6 pl-2 mb-0">
+                        133
+                    </p>
+                    <p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">
+                        Already bought
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="d-flex justify-content align-items-center py-2">
-          <img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban"><p class="h6 pl-2 mb-0">133</p><p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">Already bought</p>
+        <div class="card border-0">
+            <img src="/public/images/adidas.jpeg" class="card-img-top rounded-0" alt="Adidas">
+            <div class="card-body px-0 py-2">
+                <h5 class="card-title">Adidas</h5>
+                <p class="card-subtitle font-weight-light text-muted">
+                    Stan Smith Collection
+                </p>
+                <div class="d-flex justify-content mt-2">
+                    <p class="h6 small pt-1">
+                        now
+                    </p>
+                    <p class="h5 pl-2">
+                        €45
+                    </p>
+                    <p class="h5 text-black-50 font-weight-lighter pl-2">
+                        <del>€99</del>
+                    </p>
+                </div>
+                <div class="d-flex justify-content align-items-center py-2">
+                    <img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban">
+                    <p class="h6 pl-2 mb-0">
+                        133
+                    </p>
+                    <p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">
+                        Already bought
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-
-  <hr class="my-3 mazda mx-5">
-
-
-  <div class="m-5">
-   <div class="d-flex justify-content-between align-items-center">
-    <div>
-      <p class="h5 pb-3">Hot Right Now</p>
-    </div>
-    <div>
-      <a class="nav-link h6 text-muted font-weight-light small" href="#">See All</a>
-    </div>
-   </div>
-    <div class="row ">
-      <div class="col-6 col-md-2 col-sm-4 p-4">
-        <img src="/public/images/adidas.jpeg" class="img-fluid pb-2" alt="Adidas">
-        <h2 class="h5 font-weight-normal">Adidas</h2>
-        <p class="small font-weight-light text-muted">Stan Smith Collection</p>
-        <div class="d-flex justify-content">
-          <p class="h6 small pt-1">now</p><p class="h5 pl-2">€45</p><p class="h5 text-black-50 font-weight-lighter pl-2"><del>€99</del></p>
+        <div class="card border-0">
+            <img src="/public/images/adidas.jpeg" class="card-img-top rounded-0" alt="Adidas">
+            <div class="card-body px-0 py-2">
+                <h5 class="card-title">Adidas</h5>
+                <p class="card-subtitle font-weight-light text-muted">
+                    Stan Smith Collection
+                </p>
+                <div class="d-flex justify-content mt-2">
+                    <p class="h6 small pt-1">
+                        now
+                    </p>
+                    <p class="h5 pl-2">
+                        €45
+                    </p>
+                    <p class="h5 text-black-50 font-weight-lighter pl-2">
+                        <del>€99</del>
+                    </p>
+                </div>
+                <div class="d-flex justify-content align-items-center py-2">
+                    <img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban">
+                    <p class="h6 pl-2 mb-0">
+                        133
+                    </p>
+                    <p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">
+                        Already bought
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="d-flex justify-content align-items-center py-2">
-          <img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban"><p class="h6 pl-2 mb-0">133</p><p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">Already bought</p>
-        </div>
-      </div>
-      <div class="col-6 col-md-2 col-sm-4 p-4">
-        <img src="/public/images/coco.jpeg" class="img-fluid pb-2" alt="Chanel">
-        <h2 class="h5 font-weight-normal">Chanel</h2>
-        <p class="small font-weight-light text-muted">Coco Mademoiselle</p>
-        <div class="d-flex justify-content">
-          <p class="h6 small pt-1">now</p><p class="h5 pl-2">€63</p><p class="h5 text-black-50 font-weight-lighter pl-2"><del>€129</del></p>
-        </div>
-        <div class="d-flex justify-content align-items-center py-2">
-          <img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban"><p class="h6 pl-2 mb-0">133</p><p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">Already bought</p>
-        </div>
-      </div>
-      <div class="col-6 col-md-2 col-sm-4 p-4">
-        <img src="/public/images/Rayban.jpeg" class="img-fluid pb-2" alt="Ray-Ban">
-        <h2 class="h5 font-weight-normal">Ray-Ban</h2>
-        <p class="small font-weight-light text-muted">Ray-Ban Collections</p>
-        <div class="d-flex justify-content">
-          <p class="h6 small pt-1">now</p><p class="h5 pl-2">€79</p><p class="h5 text-black-50 font-weight-lighter pl-2"><del>€159</del></p>
-        </div>
-        <div class="d-flex justify-content align-items-center py-2">
-          <img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban"><p class="h6 pl-2 mb-0">133</p><p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">Already bought</p>
-        </div>
-      </div>
-      <div class="col-6 col-md-2 col-sm-4 p-4">
-        <img src="/public/images/iphone11.jpeg" class="img-fluid pb-2" alt="Iphone 11">
-        <h2 class="h5 font-weight-normal">Iphone 11</h2>
-        <p class="small font-weight-light text-muted">Iphone 11 Collection</p>
-        <div class="d-flex justify-content">
-          <p class="h6 small pt-1">now</p><p class="h5 pl-2">€779</p><p class="h5 text-black-50 font-weight-lighter pl-2"><del>€1199</del></p>
-        </div>
-        <div class="d-flex justify-content align-items-center py-2">
-          <img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban"><p class="h6 pl-2 mb-0">133</p><p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">Already bought</p>
-        </div>
-      </div>
-      <div class="col-6 col-md-2 col-sm-4 p-4">
-        <img src="/public/images/iphone11.jpeg" class="img-fluid pb-2" alt="Iphone 11">
-        <h2 class="h5 font-weight-normal">Iphone 11</h2>
-        <p class="small font-weight-light text-muted">Iphone 11 Collection</p>
-        <div class="d-flex justify-content">
-          <p class="h6 small pt-1">now</p><p class="h5 pl-2">€779</p><p class="h5 text-black-50 font-weight-lighter pl-2"><del>€1199</del></p>
-        </div>
-        <div class="d-flex justify-content align-items-center py-2">
-          <img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban"><p class="h6 pl-2 mb-0">133</p><p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">Already bought</p>
-        </div>
-      </div>
-      <div class="col-6 col-md-2 col-sm-4 p-4">
-        <img src="/public/images/iphone11.jpeg" class="img-fluid pb-2" alt="Iphone 11">
-        <h2 class="h5 font-weight-normal">Iphone 11</h2>
-        <p class="small font-weight-light text-muted">Iphone 11 Collection</p>
-        <div class="d-flex justify-content">
-          <p class="h6 small pt-1">now</p><p class="h5 pl-2">€779</p><p class="h5 text-black-50 font-weight-lighter pl-2"><del>€1199</del></p>
-        </div>
-        <div class="d-flex justify-content align-items-center py-2">
-          <img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban"><p class="h6 pl-2 mb-0">133</p><p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">Already bought</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <hr class="my-3 mazda mx-5">
-  
-  <div class="m-5">
-    <div class="d-flex justify-content-between align-items-center">
-     <div>
-       <p class="h5 pb-3">Our Recommendations</p>
-     </div>
-     <div>
-       <a class="nav-link h6 text-muted font-weight-light small" href="#">See All</a>
-     </div>
-    </div>
-     <div class="row">
-       <div class="col-6 col-md-2 col-sm-4 p-4">
-         <img src="/public/images/adidas.jpeg" class="img-fluid pb-2" alt="Adidas">
-         <h2 class="h5 font-weight-normal">Adidas</h2>
-         <p class="small font-weight-light text-muted">Stan Smith Collection</p>
-         <div class="d-flex justify-content">
-           <p class="h6 small pt-1">now</p><p class="h5 pl-2">€45</p><p class="h5 text-black-50 font-weight-lighter pl-2"><del>€99</del></p>
-         </div>
-         <div class="d-flex justify-content align-items-center py-2">
-           <img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban"><p class="h6 pl-2 mb-0">133</p><p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">Already bought</p>
-         </div>
-       </div>
-       <div class="col-6 col-md-2 col-sm-4 p-4">
-         <img src="/public/images/coco.jpeg" class="img-fluid pb-2" alt="Chanel">
-         <h2 class="h5 font-weight-normal">Chanel</h2>
-         <p class="small font-weight-light text-muted">Coco Mademoiselle</p>
-         <div class="d-flex justify-content">
-           <p class="h6 small pt-1">now</p><p class="h5 pl-2">€63</p><p class="h5 text-black-50 font-weight-lighter pl-2"><del>€129</del></p>
-         </div>
-         <div class="d-flex justify-content align-items-center py-2">
-           <img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban"><p class="h6 pl-2 mb-0">133</p><p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">Already bought</p>
-         </div>
-       </div>
-       <div class="col-6 col-md-2 col-sm-4 p-4">
-         <img src="/public/images/Rayban.jpeg" class="img-fluid pb-2" alt="Ray-Ban">
-         <h2 class="h5 font-weight-normal">Ray-Ban</h2>
-         <p class="small font-weight-light text-muted">Ray-Ban Collections</p>
-         <div class="d-flex justify-content">
-           <p class="h6 small pt-1">now</p><p class="h5 pl-2">€79</p><p class="h5 text-black-50 font-weight-lighter pl-2"><del>€159</del></p>
-         </div>
-         <div class="d-flex justify-content align-items-center py-2">
-           <img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban"><p class="h6 pl-2 mb-0">133</p><p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">Already bought</p>
-         </div>
-       </div>
-       <div class="col-6 col-md-2 col-sm-4 p-4">
-         <img src="/public/images/iphone11.jpeg" class="img-fluid pb-2" alt="Iphone 11">
-         <h2 class="h5 font-weight-normal">Iphone 11</h2>
-         <p class="small font-weight-light text-muted">Iphone 11 Collection</p>
-         <div class="d-flex justify-content">
-           <p class="h6 small pt-1">now</p><p class="h5 pl-2">€779</p><p class="h5 text-black-50 font-weight-lighter pl-2"><del>€1199</del></p>
-         </div>
-         <div class="d-flex justify-content align-items-center py-2">
-           <img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban"><p class="h6 pl-2 mb-0">133</p><p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">Already bought</p>
-         </div>
-       </div>
-       <div class="col-6 col-md-2 col-sm-4 p-4">
-         <img src="/public/images/iphone11.jpeg" class="img-fluid pb-2" alt="Iphone 11">
-         <h2 class="h5 font-weight-normal">Iphone 11</h2>
-         <p class="small font-weight-light text-muted">Iphone 11 Collection</p>
-         <div class="d-flex justify-content">
-           <p class="h6 small pt-1">now</p><p class="h5 pl-2">€779</p><p class="h5 text-black-50 font-weight-lighter pl-2"><del>€1199</del></p>
-         </div>
-         <div class="d-flex justify-content align-items-center py-2">
-           <img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban"><p class="h6 pl-2 mb-0">133</p><p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">Already bought</p>
-         </div>
-       </div>
-       <div class="col-6 col-md-2 col-sm-4 p-4">
-         <img src="/public/images/iphone11.jpeg" class="img-fluid pb-2" alt="Iphone 11">
-         <h2 class="h5 font-weight-normal">Iphone 11</h2>
-         <p class="small font-weight-light text-muted">Iphone 11 Collection</p>
-         <div class="d-flex justify-content">
-           <p class="h6 small pt-1">now</p><p class="h5 pl-2">€779</p><p class="h5 text-black-50 font-weight-lighter pl-2"><del>€1199</del></p>
-         </div>
-         <div class="d-flex justify-content align-items-center py-2">
-           <img src="/public/images/fire.png" class="img-fluid" alt="fire"><p class="h6 pl-2 mb-0">133</p><p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">Already bought</p>
-         </div>
-       </div>
-     </div>
-   </div>
-
-   <div class="container-fluid specs">
-    <div class="row justify-content-md-center">
-      <div class="col-sm-3 pt-5 pb-5">
-        <div class="d-flex justify-content align-items-center py-2">
-          <img src="/public/images/check.png" class="img-fluid pr-2" alt="Check"><p class="font-weight-bold m-0">Free to Use</p>
-        </div>
-        <p>OurRunner is completely free for our visitors and always will be. Finding the best products at the best prices should not cost you anything!</p>
-      </div>
-      <div class="col-sm-3 pt-5 pb-5">
-        <div class="d-flex justify-content align-items-center py-2">
-          <img src="/public/images/check.png" class="img-fluid pr-2" alt="Check"><p class="font-weight-bold m-0">Trustworthy</p>
-        </div>
-        <p>We don't allow any shops to influence your search results to their advantage. We will always show you the cheapest prices on your desired product</p>
-      </div>
-      <div class="col-sm-3 pt-5 pb-5">
-        <div class="d-flex justify-content align-items-center py-2">
-          <img src="/public/images/check.png" class="img-fluid pr-2" alt="Check"><p class="font-weight-bold m-0">Global</p>
-        </div>
-        <p>Our platform will compare prices from all around Europe to give YOU the best price available. </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="m-5">
-    <div class="d-flex justify-content-between align-items-center">
-     <div>
-       <p class="h5 pb-3">Top Sellers Last Month</p>
-     </div>
-     <div>
-       <a class="nav-link h6 text-muted font-weight-light small" href="#">See All</a>
-     </div>
-    </div>
-     <div class="row">
-       <div class="col-6 col-md-2 col-sm-4 p-4">
-         <img src="/public/images/adidas.jpeg" class="img-fluid pb-2" alt="Adidas">
-         <h2 class="h5 font-weight-normal">Adidas</h2>
-         <p class="small font-weight-light text-muted">Stan Smith Collection</p>
-         <div class="d-flex justify-content">
-           <p class="h6 small pt-1">now</p><p class="h5 pl-2">€45</p><p class="h5 text-black-50 font-weight-lighter pl-2"><del>€99</del></p>
-         </div>
-         <div class="d-flex justify-content align-items-center py-2">
-           <img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban"><p class="h6 pl-2 mb-0">133</p><p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">Already bought</p>
-         </div>
-       </div>
-       <div class="col-6 col-md-2 col-sm-4 p-4">
-         <img src="/public/images/coco.jpeg" class="img-fluid pb-2" alt="Chanel">
-         <h2 class="h5 font-weight-normal">Chanel</h2>
-         <p class="small font-weight-light text-muted">Coco Mademoiselle</p>
-         <div class="d-flex justify-content">
-           <p class="h6 small pt-1">now</p><p class="h5 pl-2">€63</p><p class="h5 text-black-50 font-weight-lighter pl-2"><del>€129</del></p>
-         </div>
-         <div class="d-flex justify-content align-items-center py-2">
-           <img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban"><p class="h6 pl-2 mb-0">133</p><p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">Already bought</p>
-         </div>
-       </div>
-       <div class="col-6 col-md-2 col-sm-4 p-4">
-         <img src="/public/images/Rayban.jpeg" class="img-fluid pb-2" alt="Ray-Ban">
-         <h2 class="h5 font-weight-normal">Ray-Ban</h2>
-         <p class="small font-weight-light text-muted">Ray-Ban Collections</p>
-         <div class="d-flex justify-content">
-           <p class="h6 small pt-1">now</p><p class="h5 pl-2">€79</p><p class="h5 text-black-50 font-weight-lighter pl-2"><del>€159</del></p>
-         </div>
-         <div class="d-flex justify-content align-items-center py-2">
-           <img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban"><p class="h6 pl-2 mb-0">133</p><p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">Already bought</p>
-         </div>
-       </div>
-       <div class="col-6 col-md-2 col-sm-4 p-4">
-         <img src="/public/images/iphone11.jpeg" class="img-fluid pb-2" alt="Iphone 11">
-         <h2 class="h5 font-weight-normal">Iphone 11</h2>
-         <p class="small font-weight-light text-muted">Iphone 11 Collection</p>
-         <div class="d-flex justify-content">
-           <p class="h6 small pt-1">now</p><p class="h5 pl-2">€779</p><p class="h5 text-black-50 font-weight-lighter pl-2"><del>€1199</del></p>
-         </div>
-         <div class="d-flex justify-content align-items-center py-2">
-           <img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban"><p class="h6 pl-2 mb-0">133</p><p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">Already bought</p>
-         </div>
-       </div>
-       <div class="col-6 col-md-2 col-sm-4 p-4">
-         <img src="/public/images/iphone11.jpeg" class="img-fluid pb-2" alt="Iphone 11">
-         <h2 class="h5 font-weight-normal">Iphone 11</h2>
-         <p class="small font-weight-light text-muted">Iphone 11 Collection</p>
-         <div class="d-flex justify-content">
-           <p class="h6 small pt-1">now</p><p class="h5 pl-2">€779</p><p class="h5 text-black-50 font-weight-lighter pl-2"><del>€1199</del></p>
-         </div>
-         <div class="d-flex justify-content align-items-center py-2">
-           <img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban"><p class="h6 pl-2 mb-0">133</p><p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">Already bought</p>
-         </div>
-       </div>
-       <div class="col-6 col-md-2 col-sm-4 p-4">
-         <img src="/public/images/iphone11.jpeg" class="img-fluid pb-2" alt="Iphone 11">
-         <h2 class="h5 font-weight-normal">Iphone 11</h2>
-         <p class="small font-weight-light text-muted">Iphone 11 Collection</p>
-         <div class="d-flex justify-content">
-           <p class="h6 small pt-1">now</p><p class="h5 pl-2">€779</p><p class="h5 text-black-50 font-weight-lighter pl-2"><del>€1199</del></p>
-         </div>
-         <div class="d-flex justify-content align-items-center py-2">
-           <img src="/public/images/fire.png" class="img-fluid" alt="fire"><p class="h6 pl-2 mb-0">133</p><p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">Already bought</p>
-         </div>
-       </div>
-     </div>
-   </div>
-
-   <hr class="my-3 mazda mx-5">
-
-   <div class="container">
-    <div class="row justify-content-md-center pt-5">
-      <div class="col col-lg-2">
-        <div class="flex-column">
-          <img src="/public/images/phone.png" class="img-fluid pb-1" alt="Phones"><p class="font-weight-bold m-0">Phone</p>
-        </div>
-        <ul class="list-unstyled pt-2">
-          <li class="small pt-2"><a class="text-dark" href="#">Phone</a></li>
-          <li class="small pt-2"><a class="text-dark" href="#">Cases</a></li>
-          <li class="small pt-2"><a class="text-dark" href="#">Charges</a></li>
-          <li class="small pt-2"><a class="text-dark" href="#">Repair Parts</a></li>
-        </ul>
-      </div>
-      <div class="col col-lg-2">
-        <div class="flex-column">
-          <img src="/public/images/computer.png" class="img-fluid pb-1" alt="Phones"><p class="font-weight-bold m-0">Hardware</p>
-        </div>
-        <ul class="list-unstyled pt-2">
-          <li class="small pt-2"><a class="text-dark" href="#">Laptop</a></li>
-          <li class="small pt-2"><a class="text-dark" href="#">PC Parts</a></li>
-          <li class="small pt-2"><a class="text-dark" href="#">Keyboard & Mouse</a></li>
-          <li class="small pt-2"><a class="text-dark" href="#">Internet</a></li>
-        </ul>
-      </div>
-      <div class="col col-lg-2">
-        <div class="flex-column">
-          <img src="/public/images/skincare.png" class="img-fluid pb-1" alt="Phones"><p class="font-weight-bold m-0">Cosmetics</p>
-        </div>
-        <ul class="list-unstyled pt-2">
-          <li class="small pt-2"><a class="text-dark" href="#">Perfumes</a></li>
-          <li class="small pt-2"><a class="text-dark" href="#">Skincare</a></li>
-          <li class="small pt-2"><a class="text-dark" href="#">Makeup</a></li>
-          <li class="small pt-2"><a class="text-dark" href="#">Hair</a></li>
-        </ul>
-      </div>
-      <div class="col col-lg-2">
-        <div class="flex-column">
-          <img src="/public/images/shoe.png" class="img-fluid pb-3" alt="Phones"><p class="font-weight-bold m-0">Shoes</p>
-        </div>
-        <ul class="list-unstyled pt-2">
-          <li class="small pt-2"><a class="text-dark" href="#">Adidas</a></li>
-          <li class="small pt-2"><a class="text-dark" href="#">Nike</a></li>
-          <li class="small pt-2"><a class="text-dark" href="#">Lacoste</a></li>
-          <li class="small pt-2"><a class="text-dark" href="#">Hugo Boss</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="row justify-content-md-center pt-5 pb-5">
-      <div class="col col-lg-2">
-        <div class="flex-column">
-          <img src="/public/images/phone.png" class="img-fluid pb-1" alt="Phones"><p class="font-weight-bold m-0">Phone</p>
-        </div>
-        <ul class="list-unstyled pt-2">
-          <li class="small pt-2"><a class="text-dark" href="#">Phone</a></li>
-          <li class="small pt-2"><a class="text-dark" href="#">Cases</a></li>
-          <li class="small pt-2"><a class="text-dark" href="#">Charges</a></li>
-          <li class="small pt-2"><a class="text-dark" href="#">Repair Parts</a></li>
-        </ul>
-      </div>
-      <div class="col col-lg-2">
-        <div class="flex-column">
-          <img src="/public/images/computer.png" class="img-fluid pb-1" alt="Phones"><p class="font-weight-bold m-0">Hardware</p>
-        </div>
-        <ul class="list-unstyled pt-2">
-          <li class="small pt-2"><a class="text-dark" href="#">Laptop</a></li>
-          <li class="small pt-2"><a class="text-dark" href="#">PC Parts</a></li>
-          <li class="small pt-2"><a class="text-dark" href="#">Keyboard & Mouse</a></li>
-          <li class="small pt-2"><a class="text-dark" href="#">Internet</a></li>
-        </ul>
-      </div>
-      <div class="col col-lg-2">
-        <div class="flex-column">
-          <img src="/public/images/skincare.png" class="img-fluid pb-1" alt="Phones"><p class="font-weight-bold m-0">Cosmetics</p>
-        </div>
-        <ul class="list-unstyled pt-2">
-          <li class="small pt-2"><a class="text-dark" href="#">Perfumes</a></li>
-          <li class="small pt-2"><a class="text-dark" href="#">Skincare</a></li>
-          <li class="small pt-2"><a class="text-dark" href="#">Makeup</a></li>
-          <li class="small pt-2"><a class="text-dark" href="#">Hair</a></li>
-        </ul>
-      </div>
-      <div class="col col-lg-2">
-        <div class="flex-column">
-          <img src="/public/images/shoe.png" class="img-fluid pb-3" alt="Phones"><p class="font-weight-bold m-0">Shoes</p>
-        </div>
-        <ul class="list-unstyled pt-2">
-          <li class="small pt-2"><a class="text-dark" href="#">Adidas</a></li>
-          <li class="small pt-2"><a class="text-dark" href="#">Nike</a></li>
-          <li class="small pt-2"><a class="text-dark" href="#">Lacoste</a></li>
-          <li class="small pt-2"><a class="text-dark" href="#">Hugo Boss</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
+	</div>
+</div>
+<hr class="my-3 mazda mx-5">
+<div class="m-5">
+	<div class="d-flex justify-content-between align-items-center">
+		<div>
+			<p class="h5 pb-3">
+				Our Recommendations
+			</p>
+		</div>
+		<div>
+			<a class="nav-link h6 text-muted font-weight-light small" href="#">See All</a>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-6 col-md-2 col-sm-4 p-4">
+			<img src="/public/images/adidas.jpeg" class="img-fluid pb-2" alt="Adidas">
+			<h2 class="h5 font-weight-normal">Adidas</h2>
+			<p class="small font-weight-light text-muted">
+				Stan Smith Collection
+			</p>
+			<div class="d-flex justify-content">
+				<p class="h6 small pt-1">
+					now
+				</p>
+				<p class="h5 pl-2">
+					€45
+				</p>
+				<p class="h5 text-black-50 font-weight-lighter pl-2">
+					<del>€99</del>
+				</p>
+			</div>
+			<div class="d-flex justify-content align-items-center py-2">
+				<img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban">
+				<p class="h6 pl-2 mb-0">
+					133
+				</p>
+				<p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">
+					Already bought
+				</p>
+			</div>
+		</div>
+		<div class="col-6 col-md-2 col-sm-4 p-4">
+			<img src="/public/images/coco.jpeg" class="img-fluid pb-2" alt="Chanel">
+			<h2 class="h5 font-weight-normal">Chanel</h2>
+			<p class="small font-weight-light text-muted">
+				Coco Mademoiselle
+			</p>
+			<div class="d-flex justify-content">
+				<p class="h6 small pt-1">
+					now
+				</p>
+				<p class="h5 pl-2">
+					€63
+				</p>
+				<p class="h5 text-black-50 font-weight-lighter pl-2">
+					<del>€129</del>
+				</p>
+			</div>
+			<div class="d-flex justify-content align-items-center py-2">
+				<img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban">
+				<p class="h6 pl-2 mb-0">
+					133
+				</p>
+				<p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">
+					Already bought
+				</p>
+			</div>
+		</div>
+		<div class="col-6 col-md-2 col-sm-4 p-4">
+			<img src="/public/images/Rayban.jpeg" class="img-fluid pb-2" alt="Ray-Ban">
+			<h2 class="h5 font-weight-normal">Ray-Ban</h2>
+			<p class="small font-weight-light text-muted">
+				Ray-Ban Collections
+			</p>
+			<div class="d-flex justify-content">
+				<p class="h6 small pt-1">
+					now
+				</p>
+				<p class="h5 pl-2">
+					€79
+				</p>
+				<p class="h5 text-black-50 font-weight-lighter pl-2">
+					<del>€159</del>
+				</p>
+			</div>
+			<div class="d-flex justify-content align-items-center py-2">
+				<img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban">
+				<p class="h6 pl-2 mb-0">
+					133
+				</p>
+				<p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">
+					Already bought
+				</p>
+			</div>
+		</div>
+		<div class="col-6 col-md-2 col-sm-4 p-4">
+			<img src="/public/images/iphone11.jpeg" class="img-fluid pb-2" alt="Iphone 11">
+			<h2 class="h5 font-weight-normal">Iphone 11</h2>
+			<p class="small font-weight-light text-muted">
+				Iphone 11 Collection
+			</p>
+			<div class="d-flex justify-content">
+				<p class="h6 small pt-1">
+					now
+				</p>
+				<p class="h5 pl-2">
+					€779
+				</p>
+				<p class="h5 text-black-50 font-weight-lighter pl-2">
+					<del>€1199</del>
+				</p>
+			</div>
+			<div class="d-flex justify-content align-items-center py-2">
+				<img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban">
+				<p class="h6 pl-2 mb-0">
+					133
+				</p>
+				<p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">
+					Already bought
+				</p>
+			</div>
+		</div>
+		<div class="col-6 col-md-2 col-sm-4 p-4">
+			<img src="/public/images/iphone11.jpeg" class="img-fluid pb-2" alt="Iphone 11">
+			<h2 class="h5 font-weight-normal">Iphone 11</h2>
+			<p class="small font-weight-light text-muted">
+				Iphone 11 Collection
+			</p>
+			<div class="d-flex justify-content">
+				<p class="h6 small pt-1">
+					now
+				</p>
+				<p class="h5 pl-2">
+					€779
+				</p>
+				<p class="h5 text-black-50 font-weight-lighter pl-2">
+					<del>€1199</del>
+				</p>
+			</div>
+			<div class="d-flex justify-content align-items-center py-2">
+				<img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban">
+				<p class="h6 pl-2 mb-0">
+					133
+				</p>
+				<p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">
+					Already bought
+				</p>
+			</div>
+		</div>
+		<div class="col-6 col-md-2 col-sm-4 p-4">
+			<img src="/public/images/iphone11.jpeg" class="img-fluid pb-2" alt="Iphone 11">
+			<h2 class="h5 font-weight-normal">Iphone 11</h2>
+			<p class="small font-weight-light text-muted">
+				Iphone 11 Collection
+			</p>
+			<div class="d-flex justify-content">
+				<p class="h6 small pt-1">
+					now
+				</p>
+				<p class="h5 pl-2">
+					€779
+				</p>
+				<p class="h5 text-black-50 font-weight-lighter pl-2">
+					<del>€1199</del>
+				</p>
+			</div>
+			<div class="d-flex justify-content align-items-center py-2">
+				<img src="/public/images/fire.png" class="img-fluid" alt="fire">
+				<p class="h6 pl-2 mb-0">
+					133
+				</p>
+				<p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">
+					Already bought
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid specs">
+	<div class="row justify-content-md-center">
+		<div class="col-sm-3 pt-5 pb-5">
+			<div class="d-flex justify-content align-items-center py-2">
+				<img src="/public/images/check.png" class="img-fluid pr-2" alt="Check">
+				<p class="font-weight-bold m-0">
+					Free to Use
+				</p>
+			</div>
+			<p>
+				OurRunner is completely free for our visitors and always will be. Finding the best products at the best prices should not cost you anything!
+			</p>
+		</div>
+		<div class="col-sm-3 pt-5 pb-5">
+			<div class="d-flex justify-content align-items-center py-2">
+				<img src="/public/images/check.png" class="img-fluid pr-2" alt="Check">
+				<p class="font-weight-bold m-0">
+					Trustworthy
+				</p>
+			</div>
+			<p>
+				We don't allow any shops to influence your search results to their advantage. We will always show you the cheapest prices on your desired product
+			</p>
+		</div>
+		<div class="col-sm-3 pt-5 pb-5">
+			<div class="d-flex justify-content align-items-center py-2">
+				<img src="/public/images/check.png" class="img-fluid pr-2" alt="Check">
+				<p class="font-weight-bold m-0">
+					Global
+				</p>
+			</div>
+			<p>
+				Our platform will compare prices from all around Europe to give YOU the best price available.
+			</p>
+		</div>
+	</div>
+</div>
+<div class="m-5">
+	<div class="d-flex justify-content-between align-items-center">
+		<div>
+			<p class="h5 pb-3">
+				Top Sellers Last Month
+			</p>
+		</div>
+		<div>
+			<a class="nav-link h6 text-muted font-weight-light small" href="#">See All</a>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-6 col-md-2 col-sm-4 p-4">
+			<img src="/public/images/adidas.jpeg" class="img-fluid pb-2" alt="Adidas">
+			<h2 class="h5 font-weight-normal">Adidas</h2>
+			<p class="small font-weight-light text-muted">
+				Stan Smith Collection
+			</p>
+			<div class="d-flex justify-content">
+				<p class="h6 small pt-1">
+					now
+				</p>
+				<p class="h5 pl-2">
+					€45
+				</p>
+				<p class="h5 text-black-50 font-weight-lighter pl-2">
+					<del>€99</del>
+				</p>
+			</div>
+			<div class="d-flex justify-content align-items-center py-2">
+				<img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban">
+				<p class="h6 pl-2 mb-0">
+					133
+				</p>
+				<p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">
+					Already bought
+				</p>
+			</div>
+		</div>
+		<div class="col-6 col-md-2 col-sm-4 p-4">
+			<img src="/public/images/coco.jpeg" class="img-fluid pb-2" alt="Chanel">
+			<h2 class="h5 font-weight-normal">Chanel</h2>
+			<p class="small font-weight-light text-muted">
+				Coco Mademoiselle
+			</p>
+			<div class="d-flex justify-content">
+				<p class="h6 small pt-1">
+					now
+				</p>
+				<p class="h5 pl-2">
+					€63
+				</p>
+				<p class="h5 text-black-50 font-weight-lighter pl-2">
+					<del>€129</del>
+				</p>
+			</div>
+			<div class="d-flex justify-content align-items-center py-2">
+				<img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban">
+				<p class="h6 pl-2 mb-0">
+					133
+				</p>
+				<p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">
+					Already bought
+				</p>
+			</div>
+		</div>
+		<div class="col-6 col-md-2 col-sm-4 p-4">
+			<img src="/public/images/Rayban.jpeg" class="img-fluid pb-2" alt="Ray-Ban">
+			<h2 class="h5 font-weight-normal">Ray-Ban</h2>
+			<p class="small font-weight-light text-muted">
+				Ray-Ban Collections
+			</p>
+			<div class="d-flex justify-content">
+				<p class="h6 small pt-1">
+					now
+				</p>
+				<p class="h5 pl-2">
+					€79
+				</p>
+				<p class="h5 text-black-50 font-weight-lighter pl-2">
+					<del>€159</del>
+				</p>
+			</div>
+			<div class="d-flex justify-content align-items-center py-2">
+				<img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban">
+				<p class="h6 pl-2 mb-0">
+					133
+				</p>
+				<p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">
+					Already bought
+				</p>
+			</div>
+		</div>
+		<div class="col-6 col-md-2 col-sm-4 p-4">
+			<img src="/public/images/iphone11.jpeg" class="img-fluid pb-2" alt="Iphone 11">
+			<h2 class="h5 font-weight-normal">Iphone 11</h2>
+			<p class="small font-weight-light text-muted">
+				Iphone 11 Collection
+			</p>
+			<div class="d-flex justify-content">
+				<p class="h6 small pt-1">
+					now
+				</p>
+				<p class="h5 pl-2">
+					€779
+				</p>
+				<p class="h5 text-black-50 font-weight-lighter pl-2">
+					<del>€1199</del>
+				</p>
+			</div>
+			<div class="d-flex justify-content align-items-center py-2">
+				<img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban">
+				<p class="h6 pl-2 mb-0">
+					133
+				</p>
+				<p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">
+					Already bought
+				</p>
+			</div>
+		</div>
+		<div class="col-6 col-md-2 col-sm-4 p-4">
+			<img src="/public/images/iphone11.jpeg" class="img-fluid pb-2" alt="Iphone 11">
+			<h2 class="h5 font-weight-normal">Iphone 11</h2>
+			<p class="small font-weight-light text-muted">
+				Iphone 11 Collection
+			</p>
+			<div class="d-flex justify-content">
+				<p class="h6 small pt-1">
+					now
+				</p>
+				<p class="h5 pl-2">
+					€779
+				</p>
+				<p class="h5 text-black-50 font-weight-lighter pl-2">
+					<del>€1199</del>
+				</p>
+			</div>
+			<div class="d-flex justify-content align-items-center py-2">
+				<img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban">
+				<p class="h6 pl-2 mb-0">
+					133
+				</p>
+				<p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">
+					Already bought
+				</p>
+			</div>
+		</div>
+		<div class="col-6 col-md-2 col-sm-4 p-4">
+			<img src="/public/images/iphone11.jpeg" class="img-fluid pb-2" alt="Iphone 11">
+			<h2 class="h5 font-weight-normal">Iphone 11</h2>
+			<p class="small font-weight-light text-muted">
+				Iphone 11 Collection
+			</p>
+			<div class="d-flex justify-content">
+				<p class="h6 small pt-1">
+					now
+				</p>
+				<p class="h5 pl-2">
+					€779
+				</p>
+				<p class="h5 text-black-50 font-weight-lighter pl-2">
+					<del>€1199</del>
+				</p>
+			</div>
+			<div class="d-flex justify-content align-items-center py-2">
+				<img src="/public/images/fire.png" class="img-fluid" alt="fire">
+				<p class="h6 pl-2 mb-0">
+					133
+				</p>
+				<p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">
+					Already bought
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<hr class="my-3 mazda mx-5">
+<div class="container">
+	<div class="row justify-content-md-center pt-5">
+		<div class="col col-lg-2">
+			<div class="flex-column">
+				<img src="/public/images/phone.png" class="img-fluid pb-1" alt="Phones">
+				<p class="font-weight-bold m-0">
+					Phone
+				</p>
+			</div>
+			<ul class="list-unstyled pt-2">
+				<li class="small pt-2"><a class="text-dark" href="#">Phone</a></li>
+				<li class="small pt-2"><a class="text-dark" href="#">Cases</a></li>
+				<li class="small pt-2"><a class="text-dark" href="#">Charges</a></li>
+				<li class="small pt-2"><a class="text-dark" href="#">Repair Parts</a></li>
+			</ul>
+		</div>
+		<div class="col col-lg-2">
+			<div class="flex-column">
+				<img src="/public/images/computer.png" class="img-fluid pb-1" alt="Phones">
+				<p class="font-weight-bold m-0">
+					Hardware
+				</p>
+			</div>
+			<ul class="list-unstyled pt-2">
+				<li class="small pt-2"><a class="text-dark" href="#">Laptop</a></li>
+				<li class="small pt-2"><a class="text-dark" href="#">PC Parts</a></li>
+				<li class="small pt-2"><a class="text-dark" href="#">Keyboard & Mouse</a></li>
+				<li class="small pt-2"><a class="text-dark" href="#">Internet</a></li>
+			</ul>
+		</div>
+		<div class="col col-lg-2">
+			<div class="flex-column">
+				<img src="/public/images/skincare.png" class="img-fluid pb-1" alt="Phones">
+				<p class="font-weight-bold m-0">
+					Cosmetics
+				</p>
+			</div>
+			<ul class="list-unstyled pt-2">
+				<li class="small pt-2"><a class="text-dark" href="#">Perfumes</a></li>
+				<li class="small pt-2"><a class="text-dark" href="#">Skincare</a></li>
+				<li class="small pt-2"><a class="text-dark" href="#">Makeup</a></li>
+				<li class="small pt-2"><a class="text-dark" href="#">Hair</a></li>
+			</ul>
+		</div>
+		<div class="col col-lg-2">
+			<div class="flex-column">
+				<img src="/public/images/shoe.png" class="img-fluid pb-3" alt="Phones">
+				<p class="font-weight-bold m-0">
+					Shoes
+				</p>
+			</div>
+			<ul class="list-unstyled pt-2">
+				<li class="small pt-2"><a class="text-dark" href="#">Adidas</a></li>
+				<li class="small pt-2"><a class="text-dark" href="#">Nike</a></li>
+				<li class="small pt-2"><a class="text-dark" href="#">Lacoste</a></li>
+				<li class="small pt-2"><a class="text-dark" href="#">Hugo Boss</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="row justify-content-md-center pt-5 pb-5">
+		<div class="col col-lg-2">
+			<div class="flex-column">
+				<img src="/public/images/phone.png" class="img-fluid pb-1" alt="Phones">
+				<p class="font-weight-bold m-0">
+					Phone
+				</p>
+			</div>
+			<ul class="list-unstyled pt-2">
+				<li class="small pt-2"><a class="text-dark" href="#">Phone</a></li>
+				<li class="small pt-2"><a class="text-dark" href="#">Cases</a></li>
+				<li class="small pt-2"><a class="text-dark" href="#">Charges</a></li>
+				<li class="small pt-2"><a class="text-dark" href="#">Repair Parts</a></li>
+			</ul>
+		</div>
+		<div class="col col-lg-2">
+			<div class="flex-column">
+				<img src="/public/images/computer.png" class="img-fluid pb-1" alt="Phones">
+				<p class="font-weight-bold m-0">
+					Hardware
+				</p>
+			</div>
+			<ul class="list-unstyled pt-2">
+				<li class="small pt-2"><a class="text-dark" href="#">Laptop</a></li>
+				<li class="small pt-2"><a class="text-dark" href="#">PC Parts</a></li>
+				<li class="small pt-2"><a class="text-dark" href="#">Keyboard & Mouse</a></li>
+				<li class="small pt-2"><a class="text-dark" href="#">Internet</a></li>
+			</ul>
+		</div>
+		<div class="col col-lg-2">
+			<div class="flex-column">
+				<img src="/public/images/skincare.png" class="img-fluid pb-1" alt="Phones">
+				<p class="font-weight-bold m-0">
+					Cosmetics
+				</p>
+			</div>
+			<ul class="list-unstyled pt-2">
+				<li class="small pt-2"><a class="text-dark" href="#">Perfumes</a></li>
+				<li class="small pt-2"><a class="text-dark" href="#">Skincare</a></li>
+				<li class="small pt-2"><a class="text-dark" href="#">Makeup</a></li>
+				<li class="small pt-2"><a class="text-dark" href="#">Hair</a></li>
+			</ul>
+		</div>
+		<div class="col col-lg-2">
+			<div class="flex-column">
+				<img src="/public/images/shoe.png" class="img-fluid pb-3" alt="Phones">
+				<p class="font-weight-bold m-0">
+					Shoes
+				</p>
+			</div>
+			<ul class="list-unstyled pt-2">
+				<li class="small pt-2"><a class="text-dark" href="#">Adidas</a></li>
+				<li class="small pt-2"><a class="text-dark" href="#">Nike</a></li>
+				<li class="small pt-2"><a class="text-dark" href="#">Lacoste</a></li>
+				<li class="small pt-2"><a class="text-dark" href="#">Hugo Boss</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
 </main>
-
 <footer class="page-footer font-small indigo">
-
-  <!-- Footer Links -->
-  <div class="container text-center text-md-left pt-4">
-
-    <!-- Grid row -->
-    <div class="row">
-
-      <!-- Grid column -->
-      <div class="col-md-3 mx-auto">
-
-        <!-- Links -->
-        <h5 class="font-weight-bold text-white text-uppercase mt-3 mb-4">Our Runner</h5>
-
-        <ul class="list-unstyled">
-          <li>
-            <a class="text-white font-weight-light" href="#!">About Us</a>
-          </li>
-          <li>
-            <a class="text-white font-weight-light" href="#!">Contact Us</a>
-          </li>
-          <li>
-            <a class="text-white font-weight-light" href="#!">Advertisment</a>
-          </li>
-          <li>
-            <a class="text-white font-weight-light" href="#!">Newsletter</a>
-          </li>
-        </ul>
-
-      </div>
-      <!-- Grid column -->
-
-      <hr class="clearfix w-100 d-md-none">
-
-      <!-- Grid column -->
-      <div class="col-md-3 mx-auto">
-
-        <!-- Links -->
-        <h5 class="font-weight-bold text-white text-uppercase mt-3 mb-4">Learn More</h5>
-
-        <ul class="list-unstyled">
-          <li>
-            <a class="text-white font-weight-light" href="#!">How to purchase</a>
-          </li>
-          <li>
-            <a class="text-white font-weight-light" href="#!">FAQ</a>
-          </li>
-          <li>
-            <a class="text-white font-weight-light" href="#!">All categories</a>
-          </li>
-          <li>
-            <a class="text-white font-weight-light" href="#!">Privacy policy</a>
-          </li>
-          <li>
-            <a class="text-white font-weight-light" href="#!">Terms & Conditions</a>
-          </li>
-        </ul>
-
-      </div>
-      <!-- Grid column -->
-
-      <hr class="clearfix w-100 d-md-none">
-
-      <!-- Grid column -->
-      <div class="col-md-3 mx-auto">
-
-        <!-- Links -->
-        <h5 class="font-weight-bold text-white text-uppercase mt-3 mb-4">Find Us Here</h5>
-
-        <ul class="list-unstyled">
-          <li>
-            <a class="text-white font-weight-light" href="#!">OurRunner A/S</a>
-          </li>
-          <li>
-            <a class="text-white font-weight-light" href="#!">Support@OurRunner.com</a>
-          </li>
-          <li>
-            <a class="text-white font-weight-light" href="#!">CVR 88 88 88 88</a>
-          </li>
-        </ul>
-
-      </div>
-      <!-- Grid column -->
-
-      <hr class="clearfix w-100 d-md-none">
-
-      <!-- Grid column -->
-      <div class="col-md-3 mx-auto">
-
-        <!-- Links -->
-        <h5 class="font-weight-bold text-white text-uppercase mt-3 mb-4">What Is Our Runner</h5>
-
-        <p class="text-white font-weight-light">By comparing prices from all over the world we can help consumers find the best deals out there. 
-
-          It's our mission to be the best free price comparison service on the market. We wish to achieve this by showing you 100% objective search results and always the lowest price available. </p>
-
-      </div>
-      <!-- Grid column -->
-
-    </div>
-    <!-- Grid row -->
-
-  </div>
-  <!-- Footer Links -->
-
-  <!-- Copyright -->
-  <div class="footer-copyright text-white text-center py-3">© 2020 Copyright
-  </div>
-  <!-- Copyright -->
-
+<!-- Footer Links -->
+<div class="container text-center text-md-left pt-4">
+	<!-- Grid row -->
+	<div class="row">
+		<!-- Grid column -->
+		<div class="col-md-3 mx-auto">
+			<!-- Links -->
+			<h5 class="font-weight-bold text-white text-uppercase mt-3 mb-4">Our Runner</h5>
+			<ul class="list-unstyled">
+				<li>
+				<a class="text-white font-weight-light" href="#!">About Us</a>
+				</li>
+				<li>
+				<a class="text-white font-weight-light" href="#!">Contact Us</a>
+				</li>
+				<li>
+				<a class="text-white font-weight-light" href="#!">Advertisment</a>
+				</li>
+				<li>
+				<a class="text-white font-weight-light" href="#!">Newsletter</a>
+				</li>
+			</ul>
+		</div>
+		<!-- Grid column -->
+		<hr class="clearfix w-100 d-md-none">
+		<!-- Grid column -->
+		<div class="col-md-3 mx-auto">
+			<!-- Links -->
+			<h5 class="font-weight-bold text-white text-uppercase mt-3 mb-4">Learn More</h5>
+			<ul class="list-unstyled">
+				<li>
+				<a class="text-white font-weight-light" href="#!">How to purchase</a>
+				</li>
+				<li>
+				<a class="text-white font-weight-light" href="#!">FAQ</a>
+				</li>
+				<li>
+				<a class="text-white font-weight-light" href="#!">All categories</a>
+				</li>
+				<li>
+				<a class="text-white font-weight-light" href="#!">Privacy policy</a>
+				</li>
+				<li>
+				<a class="text-white font-weight-light" href="#!">Terms & Conditions</a>
+				</li>
+			</ul>
+		</div>
+		<!-- Grid column -->
+		<hr class="clearfix w-100 d-md-none">
+		<!-- Grid column -->
+		<div class="col-md-3 mx-auto">
+			<!-- Links -->
+			<h5 class="font-weight-bold text-white text-uppercase mt-3 mb-4">Find Us Here</h5>
+			<ul class="list-unstyled">
+				<li>
+				<a class="text-white font-weight-light" href="#!">OurRunner A/S</a>
+				</li>
+				<li>
+				<a class="text-white font-weight-light" href="#!">Support@OurRunner.com</a>
+				</li>
+				<li>
+				<a class="text-white font-weight-light" href="#!">CVR 88 88 88 88</a>
+				</li>
+			</ul>
+		</div>
+		<!-- Grid column -->
+		<hr class="clearfix w-100 d-md-none">
+		<!-- Grid column -->
+		<div class="col-md-3 mx-auto">
+			<!-- Links -->
+			<h5 class="font-weight-bold text-white text-uppercase mt-3 mb-4">What Is Our Runner</h5>
+			<p class="text-white font-weight-light">
+				By comparing prices from all over the world we can help consumers find the best deals out there. It's our mission to be the best free price comparison service on the market. We wish to achieve this by showing you 100% objective search results and always the lowest price available.
+			</p>
+		</div>
+		<!-- Grid column -->
+	</div>
+	<!-- Grid row -->
+</div>
+<!-- Footer Links -->
+<!-- Copyright -->
+<div class="footer-copyright text-white text-center py-3">
+	© 2020 Copyright
+</div>
+<!-- Copyright -->
 </footer>
 <!-- Footer -->
-  
 </body>
-
 </html>

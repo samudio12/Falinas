@@ -1,54 +1,50 @@
-
 // Your customize CSS
 
-
 .main-head {
-    background-image: url('/public/images/head-bg.jpeg');
-    background-size: cover;
-    background-attachment: fixed;
+  background-image: url("/public/images/head-bg.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .navbar {
-    
 }
 
 #search-menu {
-    
 }
 
 .nav-categories {
-    background-color: #f8f8f8;
+  background-color: #f8f8f8;
 }
 
 .page-footer {
-    background-color: #383838;
+  background-color: #383838;
 }
 
 .specs {
-    background-color: #F8FFF8;
+  background-color: #f8fff8;
 }
 
 .divider-vertical {
-    height: 100px;
-    margin: 0 9px;
-    border-left: 1px solid #E3E3E3;
-    border-right: 1px solid #E3E3E3;
-    }
+  height: 100px;
+  margin: 0 9px;
+  border-left: 1px solid #e3e3e3;
+  border-right: 1px solid #e3e3e3;
+}
 
-    
-
+.tns-ovh .tns-inner {
+    padding-left: 15px;
+}
 
 @media only screen and (max-width: 989px) {
-    #main-menu.collapsed {
-        position: fixed;
-        z-index: 9999;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-    #navbarNavDropdown{
-        margin-bottom: 50px;
-    }
+  #main-menu.collapsed {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
-
+  #navbarNavDropdown {
+    margin-bottom: 50px;
+  }
+}
