@@ -1,8 +1,12 @@
 import 'bootstrap';
 import '@fortawesome/fontawesome-free/js/all';
 import { tns } from 'tiny-slider/src/tiny-slider.js';
+import 'ion-rangeslider/js/ion.rangeSlider.min.js';
+import 'select2/dist/js/select2.min.js';
 
 import 'tiny-slider/dist/tiny-slider.css';
+import 'ion-rangeslider/css/ion.rangeSlider.min.css';
+import 'select2/dist/css/select2.min.css';
 import '../scss/index.scss';
 
 $('#main-menu > button').click(() => {
@@ -26,10 +30,23 @@ $(document).ready(function() {
   $value.on('input change', () => {
     $valueSpan.html($value.val());
   });
-});
 
-$(document).ready(function() {
-  $('.mdb-select').materialSelect();
+  $('#price_range').ionRangeSlider({
+    type: 'double',
+    skin: 'round',
+    grid: true,
+    min: 0,
+    max: 400,
+    from: 0,
+    to: 400,
+    prefix: '€',
+  });
+
+  $('#brand_filter').select2({
+    closeOnSelect: false,
+    placeholder: 'Select a brand',
+    tags: false,
+  });
 });
 
 let carouselBaseConfig = {

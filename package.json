@@ -23,9 +23,12 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0",
     "bootstrap": "^4.3.1",
+    "ion-rangeslider": "^2.3.1",
     "jquery": "3.4.1",
     "nouislider": "^14.2.0",
     "popper.js": "^1.15.0",
+    "select2": "^4.0.13",
+    "sumoselect": "^3.0.5",
     "tiny-slider": "^2.9.2"
   },
   "devDependencies": {
