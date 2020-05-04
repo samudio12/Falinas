@@ -491,6 +491,18 @@ select {
   line-height: 1.5;
 }
 
+.btn.btn-outline-dark {
+    border-color: #ced4da;
+}
+
+.btn.btn-outline-dark:hover {
+    background-color: #ced4da;
+    border-color: #ced4da;
+}
+
+.menubar-searchbox {
+    min-width: 32%;
+}
 
 
 @media only screen and (max-width: 989px) {
