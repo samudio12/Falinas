@@ -30,96 +30,102 @@
             </form>
         </div>
         <ul class="navbar-nav mt-2 mt-lg-0 col-md-auto col-sm-3 col-6">
-            <li class="nav-item active ">
+            <li class="nav-item active p-2 ">
                 <a class="nav-link " href="#">Hot Right Now <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item p-2 ">
                 <a class="nav-link" href="#">Our Recommendations</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item p-2 ">
                 <a class="nav-link" href="#" tabindex="-1">Brands</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item p-2 ">
                 <a class="nav-link" href="#">Members</a>
             </li>
         </ul>
     </nav>
 
     <main role="main container">
-        <div class="nav-categories p-3" style="border: 1px solid #CCDEE2">
-            <ul class="nav nav-pills nav-fill justify-content align-items-center ">
-                <li class="nav-item">
+        <div class="nav-categories shadow" style="border: 1px solid #CCDEE2">
+            <ul class="nav nav-pills nav-fill justify-content align-items-center border-bottom ">
+                <li class="nav-item border-right">
                     <a href="#" title=""><img src="/public/images/perfumes.png" class="img-fluid pb-1"
                              alt="Perfumes"></a>
                     <a class="nav-link text-muted" href="page2.html">Perfumes</a>
-                </li>
-                <ul class="list-unstyled">
-                    <li class="divider-vertical"></li>
-                </ul>
-                <li class="nav-item">
+                </li>               
+                
+                <li class="nav-item border-right">
                     <a href="#" title=""><img src="/public/images/skincare.png" class="img-fluid pb-1"
                              alt="Skincare"></a>
                     <a class="nav-link text-muted" href="#">Skincare</a>
                 </li>
-                <ul class="list-unstyled">
-                    <li class="divider-vertical"></li>
-                </ul>
-                <li class="nav-item">
+               
+                <li class="nav-item border-right">
                     <a href="#" title=""><img src="/public/images/sunglasses.png" class="img-fluid p-2"
                              alt="Sunglasses"></a>
                     <a class="nav-link text-muted" href="#">Sunglasses</a>
                 </li>
-                <ul class="list-unstyled">
-                    <li class="divider-vertical"></li>
-                </ul>
-                <li class="nav-item">
+                
+                <li class="nav-item border-right">
                     <a href="#" title=""><img src="/public/images/phone.png" class="img-fluid pb-1" alt="Phones"></a>
                     <a class="nav-link text-muted" href="#">Phones</a>
                 </li>
-                <ul class="list-unstyled">
-                    <li class="divider-vertical"></li>
-                </ul>
-                <li class="nav-item">
+                
+                <li class="nav-item border-right">
                     <a href="#" title=""><img src="/public/images/computer.png" class="img-fluid pb-1"
                              alt="Computer"></a>
                     <a class="nav-link text-muted" href="#">Computer</a>
                 </li>
-                <ul class="list-unstyled">
-                    <li class="divider-vertical"></li>
-                </ul>
-                <li class="nav-item">
+                
+                <li class="nav-item border-right">
                     <a href="#" title=""><img src="/public/images/shoe.png" class="img-fluid p-2" alt="Shoe"></a>
                     <a class="nav-link text-muted" href="#">Shoe</a>
                 </li>
-                <ul class="list-unstyled">
-                    <li class="divider-vertical"></li>
-                </ul>
-                <li class="nav-item">
+              
+                <li class="nav-item border-right">
                     <a href="#" title=""><img src="/public/images/clothes.png" class="img-fluid pb-1"
                              alt="Clothing"></a>
                     <a class="nav-link text-muted" href="#">Clothing</a>
                 </li>
-                <ul class="list-unstyled">
-                    <li class="divider-vertical"></li>
-                </ul>
-                <li class="nav-item dropdown">
-                    <a href="#" title=""><img src="/public/images/points.png" class="img-fluid pt-4 mt-2" alt="More">
-                        <a class="nav justify-content-center text-muted pt-2" data-toggle="dropdown" href="#"
-                           role="button" aria-haspopup="true" aria-expanded="false">More</a>
-                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left shadow border-0">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                            <a class="dropdown-item" href="#">Separated link</a>
-                        </div>
+                
+                
             </ul>
+           <div class="text-center">
+            <form class="form-inline my-2 my-lg-0 ">
+                <input class="form-control mr-sm-2" type="search" placeholder="...What can we help you with?"
+                       aria-label="Search">
+                <button class="btn my-sm-0" type="submit"><img src="/public/images/search.png" class="img-fluid p-1"
+                         alt="Right Price"></button>
+            </form>
+           </div>
+               
+        
+            
         </div>
 
         <div class="container-fluid">
             <section class="shop ">
                 <div class="row w-auto mt-5">
 
-                    <div id="filters-block" class="col-md-3 filters-block-hidden">
+                    <div id="filters-block" class="col-md-3 filters-block-hidden ">
+                        <div>
+                            <p class="filters h5 pb-3">
+                               FILTERS
+                            </p>
+                        </div>
+
+                        
+                        <div class="pb-4 ml-3">
+                            <p class="title sort mb-1">SORT BY</p>
+                          <select name="sort" class="custom-select col-12">
+                            <option value="popularity">Popularity</option>
+                            <option value="most-recent">Most recent</option>
+                            <option value="price-ascending">Price: Ascending</option>
+                            <option value="price-descending">Price: Descending</option>
+                        </select>  
+                        </div>
+                        
+                    
                         <div id="accordion">
                             <div class="card border-top-0 border-right-0 border-left-0">
                                 <div class="card-header px-0" id="headingOne">
@@ -237,158 +243,18 @@
                                 <div id="collapseThree" class="collapse pt-3" aria-labelledby="headingThree"
                                      data-parent="#accordion">
                                     <select name="brand_filter" id="brand_filter" multiple>
-                                        <option value="0">women</option>
-                                        <option value="1">bcb</option>
-                                        <option value="2">mn</option>
-                                        <option value="3">c bsf</option>
-                                        <option value="4">wer</option>
-                                        <option value="54">g</option>
-                                        <option value="54675">dgbn</option>
-                                        <option value="4w5">w4t</option>
-                                        <option value="45">c b</option>
-                                        <option value="675">sdfg</option>
+                                        <option value="0">Adidas</option>
+                                        <option value="1">Dolce & Gabbana</option>
+                                        <option value="2">Puma</option>
+                                        <option value="3">Gucci</option>
+                                        <option value="4">Geox</option>
+                                        <option value="54">Hugo Boss</option>
+                                        <option value="54675">Nike</option>
+                                        <option value="4w5">Prada</option>
+                                        <option value="45">Sketchers</option>
+                                        <option value="675">Tommy Hilfigier</option>
                                     </select>
-                                    <!--<div class="card example-1 scrollbar-ripe-malinka border rounded">
-                                        <input class="form-control border-right-0 border-left-0 border-top-0 rounded-0"
-                                               type="text" placeholder="Search" aria-label="Search">
-
-                                        <div class="card-body force-overflow">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                       id="defaultCheck1">
-                                                <label class="form-check-label" for="defaultCheck1">
-                                                    Women
-                                                </label>
-                                            </div>
-                                            <div class="form-check ">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                       id="defaultCheck1">
-                                                <label class="form-check-label" for="defaultCheck1">
-                                                    Men
-                                                </label>
-                                            </div>
-                                            <div class="form-check ">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                       id="defaultCheck1">
-                                                <label class="form-check-label" for="defaultCheck1">
-                                                    Kids
-                                                </label>
-                                            </div>
-                                            <div class="form-check ">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                       id="defaultCheck1">
-                                                <label class="form-check-label" for="defaultCheck1">
-                                                    Girls
-                                                </label>
-                                            </div>
-                                            <div class="form-check ">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                       id="defaultCheck1">
-                                                <label class="form-check-label" for="defaultCheck1">
-                                                    Baby
-                                                </label>
-                                            </div>
-                                            <div class="form-check ">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                       id="defaultCheck1">
-                                                <label class="form-check-label" for="defaultCheck1">
-                                                    Luxury
-                                                </label>
-                                            </div>
-                                            <div class="form-check ">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                       id="defaultCheck1">
-                                                <label class="form-check-label" for="defaultCheck1">
-                                                    Luxury
-                                                </label>
-                                            </div>
-                                            <div class="form-check ">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                       id="defaultCheck1">
-                                                <label class="form-check-label" for="defaultCheck1">
-                                                    Luxury
-                                                </label>
-                                            </div>
-                                            <div class="form-check ">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                       id="defaultCheck1">
-                                                <label class="form-check-label" for="defaultCheck1">
-                                                    Luxury
-                                                </label>
-                                            </div>
-                                            <div class="form-check ">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                       id="defaultCheck1">
-                                                <label class="form-check-label" for="defaultCheck1">
-                                                    Luxury
-                                                </label>
-                                            </div>
-                                            <div class="form-check ">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                       id="defaultCheck1">
-                                                <label class="form-check-label" for="defaultCheck1">
-                                                    Luxury
-                                                </label>
-                                            </div>
-                                            <div class="form-check ">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                       id="defaultCheck1">
-                                                <label class="form-check-label" for="defaultCheck1">
-                                                    Luxury
-                                                </label>
-                                            </div>
-                                            <div class="form-check ">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                       id="defaultCheck1">
-                                                <label class="form-check-label" for="defaultCheck1">
-                                                    Luxury
-                                                </label>
-                                            </div>
-                                            <div class="form-check ">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                       id="defaultCheck1">
-                                                <label class="form-check-label" for="defaultCheck1">
-                                                    Luxury
-                                                </label>
-                                            </div>
-                                            <div class="form-check ">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                       id="defaultCheck1">
-                                                <label class="form-check-label" for="defaultCheck1">
-                                                    Luxury
-                                                </label>
-                                            </div>
-                                            <div class="form-check ">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                       id="defaultCheck1">
-                                                <label class="form-check-label" for="defaultCheck1">
-                                                    Luxury
-                                                </label>
-                                            </div>
-                                            <div class="form-check ">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                       id="defaultCheck1">
-                                                <label class="form-check-label" for="defaultCheck1">
-                                                    Luxury
-                                                </label>
-                                            </div>
-                                            <div class="form-check ">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                       id="defaultCheck1">
-                                                <label class="form-check-label" for="defaultCheck1">
-                                                    Luxury
-                                                </label>
-                                            </div>
-                                            <div class="form-check ">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                       id="defaultCheck1">
-                                                <label class="form-check-label" for="defaultCheck1">
-                                                    Luxury
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>-->
-
+                                    
                                 </div>
 
 
@@ -424,28 +290,47 @@
 
 
                         </div>
+                        
+                        <div class="buttons pt-5 btn-group-vertical pl-5 ml-5 mb-5">
+                            <div class="apply-filter pb-2">
+                                <input class="btn apply-filter-btn btn-danger btn-lg rounded-0 shadow-lg" type="submit" value="Apply Filter">
+                            </div>
+                            <div>
+                                <input class="clear-filter btn btn-lg rounded-0 shadow-lg" type="reset" value="Clear All Filters">
+                            </div>
+                            
+                        </div>
+                            
                     </div>
 
 
                     <div class="col-9">
                         <div class="d-flex justify-content-between align-items-center mazda mx-5">
-                            <div>
+                            <div class="d-flex justify-content-start">
+                                <a href="/product-page.html" title=""><img src="/public/images/shoe.png" class="img-fluid pr-3 shoe" alt="Shoe"></a>
                                 <p class="h5 pb-3">
-                                    Our Recommendations
+                                   SHOES
                                 </p>
                             </div>
-                            <div>
-                                <a class="nav-link h6 text-muted font-weight-light small" href="#">See All</a>
-                            </div>
+                            
                         </div>
-                        <div class="row m-5">
+
+                        <hr class="mt-1 mb-3"/>
+                        
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb collapsed">
+                              <li class="breadcrumb-item text-dark">Shoes</li>
+                              <li class="breadcrumb-item">Lifestyle</li>
+                              <li class="breadcrumb-item" aria-current="page">Nike</li>
+                            </ol>
+                          </nav>
+
+                        <div class="row m-5 col-md-9">
                             <div class="card border-0 col-md-3">
                                 <div class="card text-white text-right d-flex">
-                                    <img src="/public/images/adidas.png" class="card-img-top rounded-0" alt="Adidas">
+                                    <a href="product-page.html" title="product-page"><img href="product-page.html" src="/public/images/adidas.png" class="card-img-top rounded-0" alt="Adidas"></a>
                                     <div class="card-img-overlay text-right d-flex align-items-end flex-column">
-                                        <h5 class="card-title text-white float-right rounded " id="discount">
-                                            <p class="discount-text m-2">-56%</p>
-                                        </h5>
+                                        <h4><span class="badge badge-pill badge-warning">Near Out of Stock</span></h4>
                                     </div>
                                 </div>
                                 <div class="card-body px-0 py-2">
@@ -458,70 +343,24 @@
                                             now
                                         </p>
                                         <p class="h5 pl-2">
-                                            €45
+                                            €45  
                                         </p>
-                                        <p class="h5 text-black-50 font-weight-lighter pl-2">
-                                            <del>€99</del>
-                                        </p>
+                                       
                                     </div>
-                                    <div class="d-flex justify-content align-items-center py-2">
-                                        <img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban">
-                                        <p class="h6 pl-2 mb-0">
-                                            133
-                                        </p>
-                                        <p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">
-                                            Already bought
-                                        </p>
-                                    </div>
+                                    
                                 </div>
                             </div>
                             <div class="card border-0 col-md-3">
                                 <div class="card text-white text-right d-flex">
-                                    <img src="/public/images/adidas.jpeg" class="card-img-top rounded-0" alt="Adidas">
-                                    <div class="card-img-overlay text-right d-flex align-items-end flex-column">
-                                        <h5 class="card-title text-white float-right rounded mt-auto" id="discount">
-                                            <p class="discount-text m-2">-56%</p>
-                                        </h5>
-                                    </div>
-                                </div>
-                                <div class="card-body px-0 py-2">
-                                    <h5 class="card-title">Adidas</h5>
-                                    <p class="card-subtitle font-weight-light text-muted">
-                                        Stan Smith Collection
-                                    </p>
-                                    <div class="d-flex justify-content mt-2">
-                                        <p class="h6 small pt-1">
-                                            now
-                                        </p>
-                                        <p class="h5 pl-2">
-                                            €45
-                                        </p>
-                                        <p class="h5 text-black-50 font-weight-lighter pl-2">
-                                            <del>€99</del>
-                                        </p>
-                                    </div>
-                                    <div class="d-flex justify-content align-items-center py-2">
-                                        <img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban">
-                                        <p class="h6 pl-2 mb-0">
-                                            133
-                                        </p>
-                                        <p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">
-                                            Already bought
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card border-0 col-md-3">
-                                <div class="card text-white text-right d-flex">
-                                    <img src="/public/images/adidas.jpeg" class="card-img-top rounded-0" alt="Adidas">
+                                    <img src="/public/images/nike.png" class="card-img-top rounded-0" alt="Nike">
                                     <div class="card-img-overlay text-right d-flex align-items-end flex-column">
                                         <h5 class="card-title text-white float-right rounded mt-auto" id="discount">
-                                            <p class="discount-text m-2">-56%</p>
+                                            
                                         </h5>
                                     </div>
                                 </div>
                                 <div class="card-body px-0 py-2">
-                                    <h5 class="card-title">Adidas</h5>
+                                    <h5 class="card-title">Nike</h5>
                                     <p class="card-subtitle font-weight-light text-muted">
                                         Stan Smith Collection
                                     </p>
@@ -532,32 +371,20 @@
                                         <p class="h5 pl-2">
                                             €45
                                         </p>
-                                        <p class="h5 text-black-50 font-weight-lighter pl-2">
-                                            <del>€99</del>
-                                        </p>
+                                        
                                     </div>
-                                    <div class="d-flex justify-content align-items-center py-2">
-                                        <img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban">
-                                        <p class="h6 pl-2 mb-0">
-                                            133
-                                        </p>
-                                        <p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">
-                                            Already bought
-                                        </p>
-                                    </div>
+                                    
                                 </div>
                             </div>
                             <div class="card border-0 col-md-3">
                                 <div class="card text-white text-right d-flex">
-                                    <img src="/public/images/adidas.jpeg" class="card-img-top rounded-0" alt="Adidas">
+                                    <img src="/public/images/nike2.png" class="card-img-top rounded-0" alt="Nike">
                                     <div class="card-img-overlay text-right d-flex align-items-end flex-column">
-                                        <h5 class="card-title text-white float-right rounded mt-auto" id="discount">
-                                            <p class="discount-text m-2">-56%</p>
-                                        </h5>
+                                        <h4><span class="badge badge-pill badge-success">New Collection</span></h4>
                                     </div>
                                 </div>
                                 <div class="card-body px-0 py-2">
-                                    <h5 class="card-title">Adidas</h5>
+                                    <h5 class="card-title">Nike</h5>
                                     <p class="card-subtitle font-weight-light text-muted">
                                         Stan Smith Collection
                                     </p>
@@ -568,28 +395,16 @@
                                         <p class="h5 pl-2">
                                             €45
                                         </p>
-                                        <p class="h5 text-black-50 font-weight-lighter pl-2">
-                                            <del>€99</del>
-                                        </p>
+                                        
                                     </div>
-                                    <div class="d-flex justify-content align-items-center py-2">
-                                        <img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban">
-                                        <p class="h6 pl-2 mb-0">
-                                            133
-                                        </p>
-                                        <p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">
-                                            Already bought
-                                        </p>
-                                    </div>
+                                    
                                 </div>
                             </div>
                             <div class="card border-0 col-md-3">
                                 <div class="card text-white text-right d-flex">
-                                    <img src="/public/images/adidas.jpeg" class="card-img-top rounded-0" alt="Adidas">
+                                    <img src="/public/images/source.gif" class="card-img-top rounded-0" alt="Adidas">
                                     <div class="card-img-overlay text-right d-flex align-items-end flex-column">
-                                        <h5 class="card-title text-white float-right rounded mt-auto" id="discount">
-                                            <p class="discount-text m-2">-56%</p>
-                                        </h5>
+                                        
                                     </div>
                                 </div>
                                 <div class="card-body px-0 py-2">
@@ -604,28 +419,16 @@
                                         <p class="h5 pl-2">
                                             €45
                                         </p>
-                                        <p class="h5 text-black-50 font-weight-lighter pl-2">
-                                            <del>€99</del>
-                                        </p>
+                                        
                                     </div>
-                                    <div class="d-flex justify-content align-items-center py-2">
-                                        <img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban">
-                                        <p class="h6 pl-2 mb-0">
-                                            133
-                                        </p>
-                                        <p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">
-                                            Already bought
-                                        </p>
-                                    </div>
+                                    
                                 </div>
                             </div>
                             <div class="card border-0 col-md-3">
                                 <div class="card text-white text-right d-flex">
-                                    <img src="/public/images/adidas.jpeg" class="card-img-top rounded-0" alt="Adidas">
+                                    <img src="/public/images/adidas2.png" class="card-img-top rounded-0" alt="Adidas">
                                     <div class="card-img-overlay text-right d-flex align-items-end flex-column">
-                                        <h5 class="card-title text-white float-right rounded mt-auto" id="discount">
-                                            <p class="discount-text m-2">-56%</p>
-                                        </h5>
+                                        
                                     </div>
                                 </div>
                                 <div class="card-body px-0 py-2">
@@ -640,28 +443,16 @@
                                         <p class="h5 pl-2">
                                             €45
                                         </p>
-                                        <p class="h5 text-black-50 font-weight-lighter pl-2">
-                                            <del>€99</del>
-                                        </p>
+                                        
                                     </div>
-                                    <div class="d-flex justify-content align-items-center py-2">
-                                        <img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban">
-                                        <p class="h6 pl-2 mb-0">
-                                            133
-                                        </p>
-                                        <p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">
-                                            Already bought
-                                        </p>
-                                    </div>
+                                    
                                 </div>
                             </div>
                             <div class="card border-0 col-md-3">
                                 <div class="card text-white text-right d-flex">
-                                    <img src="/public/images/adidas.jpeg" class="card-img-top rounded-0" alt="Adidas">
+                                    <img src="/public/images/adidas3.png" class="card-img-top rounded-0" alt="Adidas">
                                     <div class="card-img-overlay text-right d-flex align-items-end flex-column">
-                                        <h5 class="card-title text-white float-right rounded mt-auto" id="discount">
-                                            <p class="discount-text m-2">-56%</p>
-                                        </h5>
+                                        
                                     </div>
                                 </div>
                                 <div class="card-body px-0 py-2">
@@ -676,32 +467,20 @@
                                         <p class="h5 pl-2">
                                             €45
                                         </p>
-                                        <p class="h5 text-black-50 font-weight-lighter pl-2">
-                                            <del>€99</del>
-                                        </p>
+                                        
                                     </div>
-                                    <div class="d-flex justify-content align-items-center py-2">
-                                        <img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban">
-                                        <p class="h6 pl-2 mb-0">
-                                            133
-                                        </p>
-                                        <p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">
-                                            Already bought
-                                        </p>
-                                    </div>
+                                    
                                 </div>
                             </div>
                             <div class="card border-0 col-md-3">
                                 <div class="card text-white text-right d-flex">
-                                    <img src="/public/images/adidas.jpeg" class="card-img-top rounded-0" alt="Adidas">
+                                    <img src="/public/images/skechers.png" class="card-img-top rounded-0" alt="Adidas">
                                     <div class="card-img-overlay text-right d-flex align-items-end flex-column">
-                                        <h5 class="card-title text-white float-right rounded mt-auto" id="discount">
-                                            <p class="discount-text m-2">-56%</p>
-                                        </h5>
+                                        
                                     </div>
                                 </div>
                                 <div class="card-body px-0 py-2">
-                                    <h5 class="card-title">Adidas</h5>
+                                    <h5 class="card-title">Skechers</h5>
                                     <p class="card-subtitle font-weight-light text-muted">
                                         Stan Smith Collection
                                     </p>
@@ -712,32 +491,20 @@
                                         <p class="h5 pl-2">
                                             €45
                                         </p>
-                                        <p class="h5 text-black-50 font-weight-lighter pl-2">
-                                            <del>€99</del>
-                                        </p>
+                                        
                                     </div>
-                                    <div class="d-flex justify-content align-items-center py-2">
-                                        <img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban">
-                                        <p class="h6 pl-2 mb-0">
-                                            133
-                                        </p>
-                                        <p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">
-                                            Already bought
-                                        </p>
-                                    </div>
+                                    
                                 </div>
                             </div>
                             <div class="card border-0 col-md-3">
                                 <div class="card text-white text-right d-flex">
-                                    <img src="/public/images/adidas.jpeg" class="card-img-top rounded-0" alt="Adidas">
+                                    <img src="/public/images/Skechers2.png" class="card-img-top rounded-0" alt="Adidas">
                                     <div class="card-img-overlay text-right d-flex align-items-end flex-column">
-                                        <h5 class="card-title text-white float-right rounded mt-auto" id="discount">
-                                            <p class="discount-text m-2">-56%</p>
-                                        </h5>
+                                        
                                     </div>
                                 </div>
                                 <div class="card-body px-0 py-2">
-                                    <h5 class="card-title">Adidas</h5>
+                                    <h5 class="card-title">Skechers</h5>
                                     <p class="card-subtitle font-weight-light text-muted">
                                         Stan Smith Collection
                                     </p>
@@ -748,32 +515,20 @@
                                         <p class="h5 pl-2">
                                             €45
                                         </p>
-                                        <p class="h5 text-black-50 font-weight-lighter pl-2">
-                                            <del>€99</del>
-                                        </p>
+                                        
                                     </div>
-                                    <div class="d-flex justify-content align-items-center py-2">
-                                        <img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban">
-                                        <p class="h6 pl-2 mb-0">
-                                            133
-                                        </p>
-                                        <p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">
-                                            Already bought
-                                        </p>
-                                    </div>
+                                    
                                 </div>
                             </div>
                             <div class="card border-0 col-md-3">
                                 <div class="card text-white text-right d-flex">
-                                    <img src="/public/images/adidas.jpeg" class="card-img-top rounded-0" alt="Adidas">
+                                    <img src="/public/images/puma.png" class="card-img-top rounded-0" alt="Adidas">
                                     <div class="card-img-overlay text-right d-flex align-items-end flex-column">
-                                        <h5 class="card-title text-white float-right rounded mt-auto" id="discount">
-                                            <p class="discount-text m-2">-56%</p>
-                                        </h5>
+                                        
                                     </div>
                                 </div>
                                 <div class="card-body px-0 py-2">
-                                    <h5 class="card-title">Adidas</h5>
+                                    <h5 class="card-title">Puma</h5>
                                     <p class="card-subtitle font-weight-light text-muted">
                                         Stan Smith Collection
                                     </p>
@@ -784,23 +539,51 @@
                                         <p class="h5 pl-2">
                                             €45
                                         </p>
-                                        <p class="h5 text-black-50 font-weight-lighter pl-2">
-                                            <del>€99</del>
-                                        </p>
+                                       
                                     </div>
-                                    <div class="d-flex justify-content align-items-center py-2">
-                                        <img src="/public/images/fire.png" class="img-fluid" alt="Ray-Ban">
-                                        <p class="h6 pl-2 mb-0">
-                                            133
-                                        </p>
-                                        <p class="h6 small text-black-50 font-weight-lighter pl-2 mb-0">
-                                            Already bought
-                                        </p>
-                                    </div>
+                                    
                                 </div>
                             </div>
+                            <div class="card border-0 col-md-3">
+                                <div class="card text-white text-right d-flex">
+                                    <img src="/public/images/puma2.png" class="card-img-top rounded-0" alt="Adidas">
+                                    <div class="card-img-overlay text-right d-flex align-items-end flex-column">
+                                        
+                                    </div>
+                                </div>
+                                <div class="card-body px-0 py-2">
+                                    <h5 class="card-title">Puma</h5>
+                                    <p class="card-subtitle font-weight-light text-muted">
+                                        Stan Smith Collection
+                                    </p>
+                                    <div class="d-flex justify-content mt-2">
+                                        <p class="h6 small pt-1">
+                                            now
+                                        </p>
+                                        <p class="h5 pl-2">
+                                            €45
+                                        </p>
+                                        
+                                    </div>
+                                    
+                                    <div class="pt-5 d-flex justify-content-center">
+                                        <button class=" btn btn-primary btn-lg border-0 text-dark" type="button" disabled>
+                                            <span class="spinner-grow spinner-grow-md text-dark" style="width: 3rem; height: 3rem;" role="status" aria-hidden="true"> </span>
+                                           
+                                        </button>
+                                    </div>
+
+                                   
+                                    
+                                </div>
+                                
+                            </div>
+                            
                         </div>
+                        
                     </div>
+
+                    
 
             </section>
 

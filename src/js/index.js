@@ -31,6 +31,15 @@ $(document).ready(function() {
     $valueSpan.html($value.val());
   });
 
+  
+
+  $('.carousel').carousel({
+    interval: 2000,
+    touch: true
+    })
+
+
+
   $('#price_range').ionRangeSlider({
     type: 'double',
     skin: 'round',
@@ -73,6 +82,22 @@ let carouselBaseConfig = {
     },
   },
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 tns({ ...carouselBaseConfig, container: '.hot-carousel' });
 tns({ ...carouselBaseConfig, container: '.recommendations-carousel' });
