@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import 'bootstrap';
 import '@fortawesome/fontawesome-free/js/all';
 import { tns } from 'tiny-slider/src/tiny-slider.js';
